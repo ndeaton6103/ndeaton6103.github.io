@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+
+<!-- Nolen Deaton, SIU, 8-29-23, tested 9-19-23 -->
+<html lang="en-US">
+    <head>
+      <meta charset="utf-8">
+        <title>Fan Wars</title>
+        <link rel="shortcut icon" href="images/icon.ico">
+       <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+        
+        <meta name="description" content="A small bike shop with 5 different brands of bike"> <meta name="keywords" content="nolen, Pro, cycle, Trek, GT, BMX, Road Bikes, Mountain Bikes, 29'ers">
+    </head>
+
+    <body>
+            <h1>Fan Club Submissions</h1> 
+        
+                     <!-- Rollover Image -->
+            <figure class="roll">
+            <img  class="roll" src="images/trilogy_pic.jpg"/>
+            <img class="roll2" src="images/prequel_pic.jpg"/>
+            </figure>
+        
+<!-- Navigation Menu -->
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul>
+                <li><a href="home.htm" >Home</a></li>
+                <li><a href="jedi.htm" >Jedi</a></li>
+                <li><a href="sith.htm" >Sith</a></li>
+                <li><a href="lightsabers.htm" >Lightsabers</a></li>
+                <li><a href="clones.htm" >Clones</a></li>
+                <li><a href="droids.htm" >Droids</a></li>
+                <li><a href="contact.htm" class="current" class="last item" >Contact</a></li>
+                </ul>
+            </nav>
+            
+        
+        <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    	}
+		body {
+			font: 87.5% Arial, Helvetica, sans-serif;
+			width: 500px;
+		    margin: 20px auto;
+		    padding: 20px;
+		    border: 2px solid blue;
+		}
+		h1 {
+			color: blue; 
+			font-size: 140%;
+		}
+		h2 {
+			font-size: 115%;
+			padding: .5em 0;
+		}
+		label {
+			color: blue;
+			float: left;
+			width: 8em;
+			font-weight: bold;
+			text-align: left;
+		}
+		input {
+			width: 15em;
+			margin: 0 0 .5em 1em;
+		}
+		#button, #reset {
+			width: 7em;
+			background-color: silver;
+			box-shadow: 2px 2px 0 blue; }
+		#button {
+			margin-left: 9em;
+		}
+	</style>
+</head>
+
+<body>
+<h1>Enter the following information if you are interested in joining!</h1>
+<form name="myform" action="form_results.htm" method="get">
+	
+	<h2>Contact information</h2>
+	<label for="email">Email address:</label>
+    <input type="email" name="email" id="email" autofocus><br>
+    <label for="name">Full Name:</label>
+    <input type="text" name="name" id="name" required><br>
+    <label for="address">Address:</label>
+    <input type="text" name="address" id="address" required><br>
+    <label for="city">City:</label>
+    <input type="text" name="city" id="city" required><br>
+    
+    <label for="state">State:</label>
+    <select name="state" id="state" required><br>
+    
+    <option value="st">Select</option>
+    <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+    <option value="DE">Delaware</option>
+    <option value="DC">District of Columbia</option>
+    <option value="FL">Florida</option>
+    <option value="GA">Georgia</option>
+    <option value="HI">Hawaii</option>
+    <option value="ID">Idaho</option>
+    <option value="IL">Illinois</option>
+    </select><br>
+    
+    <label for="zip">Zip Code:</label>
+    <input type="text" name="zip" id="zip" required placeholder="Five digits"><br>
+    <label for="phonenumber">Phone Number:</label>
+    <input type="text" name="phonenumber" id="phonenumber" required><br>
+    <label for="date">Date:</label>
+    <input type="text" name="date" id="date" required><br>
+     <fieldset>
+               Message:<br>
+               <textarea id="message" required minlength="50" maxlength="200" placeholder= "Message required: Min of 50 characters max of 200"></textarea><br>
+            </fieldset>
+    
+    <h2>Favorite Trilogy</h2>
+     <label for="prequel">Prequel:</label>
+    <input type="radio" name="prequel" id="prequel"><br>
+     <label for="original">Original:</label>
+    <input type="radio" name="original" id="original"><br>
+    <label for="new">New:</label>
+    <input type="radio" name="new" id="new"><br>
+    
+    <h2>We will get back to you as soon as possible.</h2>
+    <input type="submit" name="button" id="button" value="Send">
+    <input type="reset" name="reset" id="reset"> 
+        
+
+           
+
+    </body>
+
+</html>
